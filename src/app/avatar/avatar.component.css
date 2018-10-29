@@ -1,0 +1,17 @@
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
+.circle {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  

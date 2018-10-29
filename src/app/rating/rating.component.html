@@ -1,0 +1,32 @@
+ <div *ngIf="rating == '0';">
+     <h1>{{name}}
+        ☆☆☆☆☆
+     </h1>
+ </div>
+ <div *ngIf="rating == '1';">
+    <h1>{{name}}
+       ★☆☆☆☆
+    </h1>
+</div>
+<div *ngIf="rating == '2';">
+    <h1>{{name}}
+       ★★☆☆☆
+    </h1>
+</div>
+<div *ngIf="rating == '3';">
+    <h1>{{name}}
+        ★★★☆☆
+    </h1>
+</div>
+<div *ngIf="rating == '4';">
+    <h1>{{name}}
+        ★★★★☆
+    </h1>
+</div>
+<div *ngIf="rating == '5';">
+    <h1>{{name}}
+        ★★★★★
+    </h1>
+</div>
+<ng-template #else>GAGO</ng-template>
+ 

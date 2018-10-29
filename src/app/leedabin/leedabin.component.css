@@ -1,0 +1,25 @@
+
+/* This is the Circle */
+div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 50%;
+    cursor: pointer;
+  }
+/* The Circle Background Color */
+.solid {
+    
+    background-color: blue;
+  }
+/* The P tag */
+p{
+    cursor: pointer;
+}
+/* P tag text Color */
+.me {
+    color: white
+}

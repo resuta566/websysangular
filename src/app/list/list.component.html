@@ -1,0 +1,17 @@
+<h2>DOK DOK LIST!!</h2>
+<div class="form-group">
+  <div class="col-md-5 mb-3">
+  <input class="text" class="form-control" placeholder="Add Here" 
+  (keyUp.enter)="addTodo(input)"#input>
+    
+  <ul class="list-group">
+      <li class="list-group-item" *ngFor="let todo of list">
+        {{todo}}
+          <button class="btn btn-danger btn-xs pull-right"
+            (click)="removeTodo(todo)">
+            <i class="glyphicon glyphicon-remove"></i>
+          </button>
+      </li>
+    </ul>
+  </div>
+</div>
