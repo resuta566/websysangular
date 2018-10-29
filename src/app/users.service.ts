@@ -14,4 +14,8 @@ export class UsersService {
     return this.http.get(actualUrl);
   }
 
+  insert($data){
+    return this.http.post(this.url,$data);
+  }
+
 }
