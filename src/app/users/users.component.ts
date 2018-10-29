@@ -22,6 +22,7 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
      this.service.gePaginatedUsers().subscribe(r => {
        this.response = r.json();
+      console.log(r);
      })
   }
 

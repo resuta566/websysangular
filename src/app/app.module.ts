@@ -6,6 +6,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { YeonwooPipe }  from './yeonwoo.pipe';
 import { GagoPipe }  from './gago.pipe';
 import { CustomPipe }  from './custom.pipe';
+import { RouterModule }  from '@angular/router';
 import { BaliPipe }  from './bali.pipe';
 import { ReactiveFormsModule }  from '@angular/forms';
 import { FormsModule }  from '@angular/forms';
@@ -16,6 +17,11 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { LeedabinComponent } from './leedabin/leedabin.component';
 import { MerchComponent } from './merch/merch.component';
 import { UsersComponent } from './users/users.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HomeComponent } from './home/home.component';
+import { PostsComponent } from './posts/posts.component';
+import { AboutComponent } from './about/about.component';
+import { OnepostComponent } from './onepost/onepost.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +38,11 @@ import { UsersComponent } from './users/users.component';
     LeedabinComponent,
     MerchComponent,
     UsersComponent,
+    NavBarComponent,
+    HomeComponent,
+    PostsComponent,
+    AboutComponent,
+    OnepostComponent,
     
   ],
   imports: [
@@ -39,6 +50,14 @@ import { UsersComponent } from './users/users.component';
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule.forRoot([
+      {path: '', component:HomeComponent},
+      {path: 'users', component:UsersComponent},
+      {path: 'posts/:id', component:OnepostComponent},
+      {path: 'posts', component:PostsComponent},
+      {path: 'about', component:AboutComponent},
+
+    ])
   ],
   providers: [
     Title
