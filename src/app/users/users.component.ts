@@ -11,9 +11,9 @@ export class UsersComponent implements OnInit {
 
   response:any;
   usersForm = new FormGroup({
-    name: new FormControl(Validators.required),
-    email: new FormControl(Validators.required),
-    password: new FormControl(Validators.required),
+    name: new FormControl('',Validators.required),
+    email: new FormControl('',Validators.required),
+    password: new FormControl('',Validators.required),
   })
 
   constructor(private service: UsersService) {} 
